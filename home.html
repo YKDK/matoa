@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221228214854">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-lp>
+			<div class="header__container">
+				<a href="#" class="header__logo"><picture><source srcset="img/header/logo.webp" type="image/webp"><img src="img/header/logo.png" alt="logo"></picture></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Watches</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Eyewear</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Accessories</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">News</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__action action-header">
+					<a data-popup="#search" href="#" class="action-header__search _icon-search"></a>
+					<a data-da=".menu__body, 400" href="#" class="action-header__login _icon-user">Log In</a>
+					<a data-popup="#bag" href="#" class="action-header__bag _icon-bag"><span>0</span></a>
+					<button type="button" class="header__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main-slider main-slider">
+				<div class="main-slider__container">
+					<!-- Оболонка слайдера -->
+					<div class="main-slider__slider swiper">
+						<!-- Частина слайдера, що рухається -->
+						<div class="main-slider__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="main-slider__slide slide-main-slider swiper-slide">
+								<div data-da=".slide-main-slider__body--1, 767.98,1" class="slide-main-slider__image-ibg_contain">
+									<picture><source srcset="img/main/main-slider/clock.webp" type="image/webp"><img src="img/main/main-slider/clock.png" alt="clock"></picture>
+								</div>
+								<div class="slide-main-slider__body slide-main-slider__body--1">
+									<h2 class="slide-main-slider__title">WAY KAMBAS MINI EBONY</h2>
+									<p class="slide-main-slider__text">
+										MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin.
+									</p>
+									<a href="#" class="slide-main-slider__more more">
+										Discover
+									</a>
+									<div class="slide-main-slider__action">
+										<button data-ripple type="submit" class="slide-main-slider__button button button--basket"><span class="_icon-basket">Add to cart</span></button>
+										<button type="submit" class="slide-main-slider__border-button border-button border-button--cicil">
+											<img class="cicil-orange" src="img/icons/cicil.svg" alt="logo">
+											<img class="cicil-white" src="img/icons/cicil-white.svg" alt="logo">
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-slider__action-mobile">
+							<button data-ripple type="button" class="main-slider__button button button--basket"><span class="_icon-basket">Add to cart</span></button>
+							<button type="button" class="main-slider__border-button border-button border-button--cicil">
+								<img class="cicil-orange" src="img/icons/cicil.svg" alt="logo">
+								<img class="cicil-white" src="img/icons/cicil-white.svg" alt="logo">
+							</button>
+						</div>
+
+						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
+						<div class="main-slider__arrows">
+							<button type="button" class="main-slider__arrow swiper-button-prev _icon-right"></button>
+							<button type="button" class="main-slider__arrow swiper-button-next _icon-right"></button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div data-watch data-watch-threshold="0.3" class="page__discover-now discover-now">
+				<div class="discover-now__container">
+					<article class="discover-now__item item-discover-now">
+						<h3 class="item-discover-now__title">Luxurious <span>Eyewear</span></h3>
+						<div class="item-discover-now__body">
+							<p class="item-discover-now__text">See the beauty of exotic world with the luxurious glasses</p>
+							<a href="#" class="item-discover-now__link more">Discover Now</a>
+							<div class="item-discover-now__image">
+								<picture><source srcset="img/main/discover-now/glasses-discover.webp" type="image/webp"><img src="img/main/discover-now/glasses-discover.png" alt="glasses"></picture>
+							</div>
+						</div>
+					</article>
+					<article class="discover-now__item item-discover-now">
+						<h3 class="item-discover-now__title">Comfortable <span>Watches</span></h3>
+						<div class="item-discover-now__body">
+							<p class="item-discover-now__text">Feels the balancing function and beauty in our wooden watches</p>
+							<a href="#" class="item-discover-now__link more">Discover Now</a>
+							<div class="item-discover-now__image">
+								<picture><source srcset="img/main/discover-now/clock-discover.webp" type="image/webp"><img src="img/main/discover-now/clock-discover.png" alt="Watches"></picture>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+
+			<section data-watch data-watch-threshold="0.04" class="page__monthly monthly-deals">
+				<div class="monthly-deals__container">
+					<h2 class="monthly-deals__title title">Monthly Deals</h2>
+					<div class="monthly-deals__items">
+						<article class="monthly-deals__item item-monthly-deal">
+							<a href="#" class="item-monthly-deal__image-ibg">
+								<picture><source srcset="img/main/monthly-deals/singo-maple.webp" type="image/webp"><img src="img/main/monthly-deals/singo-maple.jpg" alt="Singo Maple"></picture>
+							</a>
+							<div class="item-monthly-deal__body">
+								<h4 class="item-monthly-deal__title">
+									<a href="#" class="monthly-deals__link-title">Singo Maple</a>
+								</h4>
+								<div class="item-monthly-deal__sale">20% Off</div>
+								<div class="item-monthly-deal__price-old">Rp 1.500.000</div>
+								<div class="item-monthly-deal__price">Rp 1.264.000</div>
+								<div class="item-monthly-deal__hiden">
+									<div class="item-monthly-deal__actions">
+										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
+										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="monthly-deals__item item-monthly-deal">
+							<a href="#" class="item-monthly-deal__image-ibg">
+								<picture><source srcset="img/main/monthly-deals/singo-ebony.webp" type="image/webp"><img src="img/main/monthly-deals/singo-ebony.jpg" alt="Singo Ebony"></picture>
+							</a>
+							<div class="item-monthly-deal__body">
+								<h4 class="item-monthly-deal__title">
+									<a href="#" class="monthly-deals__link-title">Singo Ebony</a>
+								</h4>
+								<div class="item-monthly-deal__sale">20% Off</div>
+								<div class="item-monthly-deal__price-old">Rp 1.500.000</div>
+								<div class="item-monthly-deal__price">Rp 1.264.000</div>
+								<div class="item-monthly-deal__hiden">
+									<div class="item-monthly-deal__actions">
+										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
+										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="monthly-deals__item item-monthly-deal">
+							<a href="#" class="item-monthly-deal__image-ibg">
+								<picture><source srcset="img/main/monthly-deals/rakai-ebony.webp" type="image/webp"><img src="img/main/monthly-deals/rakai-ebony.jpg" alt="Rakai Ebony"></picture>
+							</a>
+							<div class="item-monthly-deal__body">
+								<h4 class="item-monthly-deal__title">
+									<a href="#" class="monthly-deals__link-title">Rakai Ebony</a>
+								</h4>
+								<div class="item-monthly-deal__sale">15% Off</div>
+								<div class="item-monthly-deal__price-old">Rp 1.280.000</div>
+								<div class="item-monthly-deal__price">Rp 1.118.000</div>
+								<div class="item-monthly-deal__hiden">
+									<div class="item-monthly-deal__actions">
+										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
+										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="monthly-deals__item item-monthly-deal">
+							<a href="#" class="item-monthly-deal__image-ibg">
+								<picture><source srcset="img/main/monthly-deals/way-kambas.webp" type="image/webp"><img src="img/main/monthly-deals/way-kambas.jpg" alt="Way Kambas Mini Maple"></picture>
+							</a>
+							<div class="item-monthly-deal__body">
+								<h4 class="item-monthly-deal__title">
+									<a href="#" class="monthly-deals__link-title">Way Kambas Mini Maple</a>
+								</h4>
+								<div class="item-monthly-deal__sale">10% Off</div>
+								<div class="item-monthly-deal__price-old">Rp 1.280.000</div>
+								<div class="item-monthly-deal__price">Rp 1.024.000</div>
+								<div class="item-monthly-deal__hiden">
+									<div class="item-monthly-deal__actions">
+										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
+										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
+									</div>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+
+			</section>
+
+			<section data-watch data-watch-threshold="0.2" class="page__recent recent-news">
+				<div class="recent-news__container">
+					<h2 class="recent-news__title title">Recent News</h2>
+					<div class="recent-news__body">
+						<div class="recent-news__content">
+							<h3 class="recent-news__label">Where To Travel</h3>
+							<p class="recent-news__text">Matoa Where To Travel? Yogyakarta</p>
+							<a href="#" class="recent-news__border-button border-button border-button--small">Discover</a>
+						</div>
+						<div class="recent-news__image">
+							<picture><source srcset="img/main/recent-news/watch.webp" type="image/webp"><img src="img/main/recent-news/watch.jpg" alt="watch"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-watch data-watch-threshold="0.02" class="page__series series">
+				<div class="series__container">
+					<div class="series__columns">
+						<div class="series__column">
+							<h3 class="series__title title title--small">Maple Series</h3>
+							<div id="cat-01" class="series__article"></div>
+						</div>
+						<div class="series__column">
+							<h3 class="series__title title title--small">Ebony Series</h3>
+							<div id="cat-02" class="series__article"></div>
+						</div>
+						<div class="series__column">
+							<h3 class="series__title title title--small">Featured</h3>
+							<div id="cat-03" class="series__article"></div>
+						</div>
+					</div>
+					<div class="items-series__footer">
+						<div class="items-series__button-action">
+							<button type="button" class="items-series__border-button border-button border-button--big">See More</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-watch data-watch-threshold="0.2" class="page__testimonials testimonials">
+				<div class="testimonials__container">
+					<h2 class="testimonials__title title">Testimonials</h2>
+					<div class="testimonials__slider swiper">
+						<div class="testimonials__wrapper swiper-wrapper">
+							<div class="testimonials__slide slide-testimonials swiper-slide">
+								<div class="slide-testimonials__body">
+									<div class="slide-testimonials__image">
+										<picture><source srcset="img/main/testimonials/testimonials-image.webp" type="image/webp"><img src="img/main/testimonials/testimonials-image.png" alt="image"></picture>
+									</div>
+									<div class="slide-testimonials__content">
+										<h4 class="slide-testimonials__name">Gita Savitri</h4>
+										<p class="slide-testimonials__profession">Content Creator/Influencer</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="testimonials__arrows">
+							<button type="button" class="testimonials__arrow-left swiper-button-prev _icon-left_grey"></button>
+							<button type="button" class="testimonials__arrow-right swiper-button-next _icon-left_grey"></button>
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+
+			<section data-watch data-watch-threshold="0.1" class="page__insta insta">
+				<div class="insta__container">
+					<h2 class="insta__title title">Instagram</h2>
+					<div data-gallery class="insta__items">
+						<a href="img/main/insta/insta-01-big.jpg" class="insta__item">
+							<div class="insta__image-ibg">
+								<picture><source srcset="img/main/insta/insta-01.webp" type="image/webp"><img src="img/main/insta/insta-01.jpg" alt="image"></picture>
+							</div>
+						</a>
+						<a href="img/main/insta/insta-02-big.jpg" class="insta__item">
+							<div class="insta__image-ibg">
+								<picture><source srcset="img/main/insta/insta-02.webp" type="image/webp"><img src="img/main/insta/insta-02.jpg" alt="image"></picture>
+							</div>
+						</a>
+						<a href="img/main/insta/insta-03-big.jpg" class="insta__item">
+							<div class="insta__image-ibg">
+								<picture><source srcset="img/main/insta/insta-03.webp" type="image/webp"><img src="img/main/insta/insta-03.jpg" alt="image"></picture>
+							</div>
+						</a>
+						<a href="img/main/insta/insta-04-big.jpg" class="insta__item">
+							<div class="insta__image-ibg">
+								<picture><source srcset="img/main/insta/insta-04.webp" type="image/webp"><img src="img/main/insta/insta-04.jpg" alt="image"></picture>
+							</div>
+						</a>
+						<a href="img/main/insta/insta-05-big.jpg" class="insta__item">
+							<div class="insta__image-ibg">
+								<picture><source srcset="img/main/insta/insta-05.webp" type="image/webp"><img src="img/main/insta/insta-05.jpg" alt="image"></picture>
+							</div>
+						</a>
+					</div>
+
+				</div>
+
+			</section>
+
+			<div data-watch data-watch-threshold="0.3" class="page__pay pay">
+				<div class="pay__container">
+					<div class="pay__body">
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-01.webp" type="image/webp"><img src="img/main/pays/image-01.png" alt="BNI"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-02.webp" type="image/webp"><img src="img/main/pays/image-02.png" alt="Permatabank"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-03.webp" type="image/webp"><img src="img/main/pays/image-03.png" alt="MasterCard"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-04.webp" type="image/webp"><img src="img/main/pays/image-04.png" alt="Danamon"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-05.webp" type="image/webp"><img src="img/main/pays/image-05.png" alt="VISA"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-06.webp" type="image/webp"><img src="img/main/pays/image-06.png" alt="Mandiri"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-07.webp" type="image/webp"><img src="img/main/pays/image-07.png" alt="Kredivo"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-08.webp" type="image/webp"><img src="img/main/pays/image-08.png" alt="UOB"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-09.webp" type="image/webp"><img src="img/main/pays/image-09.png" alt="GOPAY"></picture>
+						</a>
+						<a href="#" class="pay__items">
+							<picture><source srcset="img/main/pays/image-10.webp" type="image/webp"><img src="img/main/pays/image-10.png" alt="Standart Chartered"></picture>
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer data-watch data-watch-threshold="0.1" data-spollers="768,max" class="footer">
+			<div class="footer__container">
+				<div class="footer__column">
+					<a href="#" class="footer__logo">
+						<picture><source srcset="img/footer/logo-footer.webp" type="image/webp"><img src="img/footer/logo-footer.png" alt="logo"></picture>
+					</a>
+					<div class="footer__blocks">
+						<div class="footer__block">
+							<h3 class="footer__label label-footer">Address</h3>
+							<div class="footer__text">
+								<p>Store & Office</p>
+								<p>Jl. Setrasari Kulon III, No. 10-12,</p>
+								<p>Sukarasa, Sukasari, Bandung,</p>
+								<p>Jawa Barat, Indonesia 40152</p>
+							</div>
+						</div>
+						<div class="footer__block">
+							<h3 class="footer__label label-footer">Office Hour</h3>
+							<div class="footer__text">
+								<p>Monday - Sunday</p>
+								<p>10.00 - 18.00</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__column ">
+					<button type="button" data-spoller class="footer__title title title--white _icon-arrow_select">Get in touch</button>
+					<div class="footer__body">
+						<div class="footer__cotacts contacts-footer">
+							<div class="contacts-footer__label label-footer">Phone</div>
+							<a href="tel:02220277564" class="contacts-footer__value">022-20277564</a>
+							<div class="contacts-footer__label label-footer">Service Center</div>
+							<a href="tel:08112338899" class="contacts-footer__value">0811-233-8899</a>
+							<div class="contacts-footer__label label-footer">Customer Service</div>
+							<a href="tel:08112359988" class="contacts-footer__value">0811-235-9988</a>
+							<div class="footer__social social">
+								<a href="#" class="social__item _icon-facebook"></a>
+								<a href="#" class="social__item _icon-instagram"></a>
+								<a href="#" class="social__item _icon-twitter"></a>
+								<a href="#" class="social__item _icon-youtube"></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="footer__column ">
+					<button type="button" data-spoller class="footer__title title title--white _icon-arrow_select">Useful Link</button>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Warranty & Complaints</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Order & Shipping</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Tracking Order</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">About Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Repair</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Terms</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">FAQ</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__column ">
+					<button type="button" data-spoller class="footer__title title title--white _icon-arrow_select">Campaign</button>
+					<nav class="footer__menu menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Mengenal Arti Cukup</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Tell Your Difference</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Waykambas</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Rebrand</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Gallery</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Singo</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Rakai</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+	<div id="search" aria-hidden="true" class="popup popup--search">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<form action="#" method="get" class="search-form">
+						<div class="search-form__title title title--small">Search</div>
+						<div class="search-form__body">
+							<div class="search-form__line">
+								<input data-required autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Пошук" class="search-form__input input">
+							</div>
+							<button type="submit" class="button _icon-search"></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="bag" aria-hidden="true" class="popup popup--bag">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+					<form action="#" method="get" class="bag">
+						<div class="bag__items">
+							<div class="bag__item item-bag">
+								<a href="#" class="item-bag__image">
+									<picture><source srcset="img/product/popap/way-kambas.webp" type="image/webp"><img src="img/product/popap/way-kambas.png" alt="wristwatch"></picture>
+								</a>
+								<div class="item-bag__body">
+									<a href="#" class="item-bag__title">Way Kambas Mini Ebony</a>
+									<div class="item-bag__price-old">Rp 1.280.000</div>
+									<div class="item-bag__price">Rp 1.024.000</div>
+									<div class="item-bag__mark">
+										<div class="item-bag__subtitle">Custom Engrave</div>
+										<div class="item-bag__wish">“Happy | Birthday | from”</div>
+									</div>
+								</div>
+								<div class="item-bag__info">
+									<div class="item-bag__packaging">
+										<div class="item-bag__label">Select Packaging</div>
+										<select class="item-bag__select" name="form[]" data-class-modif="form">
+											<option value="1" selected>Wooden Packaging (Rp 50.000)</option>
+											<option value="2">Wooden Packaging (Rp 50.000)</option>
+											<option value="3">Wooden Packaging (Rp 50.000)</option>
+											<option value="4">Wooden Packaging (Rp 50.000)</option>
+										</select>
+									</div>
+									<div class="item-bag__actions">
+										<div data-quantity class="item-bag__quantity quantity">
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<div class="item-bag__total-price">Rp 2.048.000</div>
+										<button class="item-bag__border-button border-button border-button--delete _icon-delete"></button>
+									</div>
+								</div>
+							</div>
+							<div class="bag__item item-bag">
+								<a href="#" class="item-bag__image">
+									<picture><source srcset="img/product/popap/sikka.webp" type="image/webp"><img src="img/product/popap/sikka.png" alt="wristwatch"></picture>
+								</a>
+								<div class="item-bag__body">
+									<a href="#" class="item-bag__title">Sikka (Ebony & Maple)</a>
+									<div class="item-bag__price">Rp 1.264.000</div>
+								</div>
+								<div class="item-bag__info">
+									<div class="item-bag__packaging">
+										<div class="item-bag__label">Select Packaging</div>
+										<select class="item-bag__select" name="form[]" data-class-modif="form">
+											<option value="1" selected>Wooden Packaging (Rp 50.000)</option>
+											<option value="2">Wooden Packaging (Rp 50.000)</option>
+											<option value="3">Wooden Packaging (Rp 50.000)</option>
+											<option value="4">Wooden Packaging (Rp 50.000)</option>
+										</select>
+									</div>
+									<div class="item-bag__actions">
+										<div data-quantity class="item-bag__quantity quantity">
+											<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+											<div class="quantity__input">
+												<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+										</div>
+										<div class="item-bag__total-price">Rp 1.264.000</div>
+										<button class="item-bag__border-button border-button border-button--delete _icon-delete"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bag__footer">
+							<div class="bag__promo promo-bag">
+								<label for="p-1" class="promo-bag__label">Kode Promo</label>
+								<div class="promo-bag__line">
+									<input id="p-1" autocomplete="off" type="text" name="promo" class="input">
+								</div>
+								<div class="promo-bag__info">35% OFF</div>
+							</div>
+							<div class="bag__total total-bag">
+								<div class="total-bag__label">Subtotal</div>
+								<div class="total-bag__price-old">Rp 3.312.000</div>
+								<div class="total-bag__price">Rp 2.152.000</div>
+							</div>
+						</div>
+						<button data-ripple type="submit" class="bag__button button button--large">Checkout</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20221228214854"></script>
+</body>
+
+</html>
