@@ -3856,7 +3856,8 @@ body::after {
   grid-template-columns: auto 1fr;
 }
 
-.options__label img {
+.options__label img,
+.options__label picture {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -5895,7 +5896,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             justify-content: start;
   }
 
-  .options__label img {
+  .options__label img,
+  .options__label picture {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
