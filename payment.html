@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Product Page</title>
+	<title>Payment</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -35,224 +35,182 @@
 				</div>
 			</div>
 		</header>
-		<main class="product">
-			<nav class="product__breadcrumbs breadcrumbs">
-				<div class="breadcrumbs__container">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item">
-							<a href="#" class="breadcrumbs__link">Home</a>
+		<main class="payment">
+
+			<nav class="payment__breadcrumbs breadcrumbs-payment">
+				<div class="breadcrumbs-payment__container">
+					<ul class="breadcrumbs-payment__list">
+						<li class="breadcrumbs-payment__item">
+							<a href="#" class="breadcrumbs-payment__link breadcrumbs-payment__link--checkout-border">1. Checkout</a>
 						</li>
-						<li class="breadcrumbs__item">
-							<a href="#" class="breadcrumbs__link">Product</a>
+						<li class="breadcrumbs-payment__item">
+							<a href="#" class="breadcrumbs-payment__link _icon-payment-orange">2. Payment</a>
 						</li>
-						<li class="breadcrumbs__item">
-							<a href="#" class="breadcrumbs__link"> Watches</a>
-						</li>
-						<li class="breadcrumbs__item">
-							<span class="breadcrumbs__name-product"> Way Kambas Mini Ebony</span>
+						<li class="breadcrumbs-payment__item">
+							<span class="breadcrumbs-payment__link _icon-confirmation">3. Confirmation</span>
 						</li>
 					</ul>
 				</div>
 			</nav>
 
-			<section class="product__body body-product">
-				<div class="body-product__container">
-					<div class="body-product__image">
-						<div class="body-product__image-preview image-preview">
-							<div class="image-preview__slider swiper">
-								<div class="image-preview__wrapper swiper-wrapper">
-									<div class="image-preview__slide swiper-slide">
-										<img src="img/product/product-body/product-body_watch.svg" alt="wristwatch">
-									</div>
-									<div class="image-preview__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-front.webp" type="image/webp"><img src="img/product/product-body/wristwatch-front.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-preview__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-back.webp" type="image/webp"><img src="img/product/product-body/wristwatch-back.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-preview__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-box.webp" type="image/webp"><img src="img/product/product-body/wristwatch-box.png" alt="wristwatch"></picture>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="body-product__image-product image-product">
-							<div class="image-product__slider swiper">
-								<div class="image-product__wrapper swiper-wrapper">
-									<div class="image-product__slide swiper-slide">
-										<img src="img/product/product-body/product-body_watch.svg" alt="wristwatch">
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-front.webp" type="image/webp"><img src="img/product/product-body/wristwatch-front.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-back.webp" type="image/webp"><img src="img/product/product-body/wristwatch-back.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-box.webp" type="image/webp"><img src="img/product/product-body/wristwatch-box.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<img src="img/product/product-body/product-body_watch.svg" alt="wristwatch">
-									</div>
+			<section class="payment__detail detail">
 
+				<div class="detail__container">
+					<div class="detail__content">
+						<div class="detail__order">
+
+							<article class="detail__info info-order">
+								<h2 class="info-order__title title">Detail Order</h2>
+								<div class="info-order__items info-order__items--subtotal">
+									<h3 class="info-order__subtitle">Subtotal</h3>
+									<div class="info-order__price">Rp 2.152.000</div>
+								</div>
+								<div class="info-order__items info-order__items--cost">
+									<h3 class="info-order__subtitle">Shipping Cost</h3>
+									<div class="info-order__price">Rp 500.000</div>
+								</div>
+								<div class="info-order__items">
+									<h3 class="info-order__subtitle">Promo Code</h3>
+									<div class="info-order__price info-order__price--promo">INDONESIA</div>
+								</div>
+								<div class="info-order__items info-order__items--packagimg-order">
+									<h3 class="info-order__subtitle">Packaging</h3>
+									<div class="info-order__price">Rp 50.000</div>
+								</div>
+								<div class="info-order__items info-order__items--total">
+									<h3 class="info-order__subtitle">Grand Total</h3>
+									<div class="info-order__price">Rp 2.702.000</div>
+								</div>
+							</article>
+
+							<article class="detail__payment payment-detail">
+								<div class="payment-detail__body">
+									<h2 class="payment-detail__title title">Payment Detail</h2>
+									<div class="payment-detail__time">11:55:55</div>
+								</div>
+								<p class="payment-detail__text">Please make a payment according with the limit time specified, starting from now</p>
+							</article>
+						</div>
+
+						<article data-da=".detail__order, 992,1" class="detail__delivery delivery-detail">
+							<h2 class="delivery-detail__title title">
+								Order Detail
+							</h2>
+							<div class="delivery-detail__items delivery-detail__items--order-number">
+								<h3 class="delivery-detail__subtitle">Order Number</h3>
+								<div class="delivery-detail__value">
+									<div class="delivery-detail__subject">MTAWEB-3A86D4DB<span>COPY</span></div>
+									<div class="delivery-detail__text">Always remember Order Number for easy tracking</div>
 								</div>
 							</div>
-						</div>
+							<div class="delivery-detail__items delivery-detail__items--date">
+								<h3 class="delivery-detail__subtitle">Purchase Date</h3>
+								<div class="delivery-detail__subject">2019-11-07 14:01:48</div>
+							</div>
+							<div class="delivery-detail__items delivery-detail__items--ordered-items">
+								<h3 class="delivery-detail__subtitle">Items</h3>
+								<div class="delivery-detail__value">
+									<div class="delivery-detail__item">
+										<div class="delivery-detail__subject">Way Kambas Mini Ebony</div>
+										<div class="delivery-detail__text">2 x IDR 1.024.000</div>
+									</div>
+									<div class="delivery-detail__item">
+										<div class="delivery-detail__subject">Sikka (Ebony & Mapple)</div>
+										<div class="delivery-detail__text">1 x IDR 1.264.000</div>
+									</div>
+								</div>
+							</div>
+							<div class="delivery-detail__items delivery-detail__items--customer">
+								<h3 class="delivery-detail__subtitle">Name</h3>
+								<div class="delivery-detail__subject">Rasyidin Arsyad Nasution</div>
+							</div>
+							<div class="delivery-detail__items delivery-detail__items--phone">
+								<h3 class="delivery-detail__subtitle">Phone</h3>
+								<a href="tel:18911188899" class="delivery-detail__subject">+18911188899</a>
+							</div>
+							<div class="delivery-detail__items">
+								<h3 class="delivery-detail__subtitle delivery-detail__items--email">Email</h3>
+								<a href="mailto:rasyid.arsyad@gmail.com" class="delivery-detail__subject">rasyid.arsyad@gmail.com</a>
+							</div>
+							<div class="delivery-detail__items delivery-detail__items--address">
+								<h3 class="delivery-detail__subtitle ">Shipping Address</h3>
+								<div class="delivery-detail__subject delivery-detail__subject--address">
+									<p>18 Richardson Drive</p>
+									<p>Fountain Valley, CA 92708</p>
+								</div>
+							</div>
+						</article>
 					</div>
 
-					<form action="#" class="body-product__content">
-						<h1 data-da=".body-product__container, 768,0" class="body-product__title title">WAY KAMBAS MINI EBONY</h1>
-						<div class="body-product__price-old">Rp 1.280.000</div>
-						<div class="body-product__price">Rp 1.024.000</div>
-						<div class="body-product__choice-block choice-block">
-							<h6 class="choice-block__title">Choose Model</h6>
-							<div class="choice-block__actions">
-								<div class="choice-block__model model">
-									<input id="o-1" checked type="radio" name="model" value="1" class="model__input">
-									<label class="model__label" for="o-1">
-										<picture><source srcset="img/product/product-body/product-model/model-choice_01.webp" type="image/webp"><img src="img/product/product-body/product-model/model-choice_01.png" alt="model 01"></picture>
-									</label>
+					<div class="detail__payment-method payment-method">
+						<form action="#" method="POST" enctype="multipart/form-data" class="payment-method__options options">
+							<div class="options__body">
+								<h2 class="options__title title">Payment Method</h2>
+								<div class="options__items">
+									<div class="options__item options__item--bni">
+										<input id="payment-bni" class="options__input" data-required autocomplete="off" type="radio" value="1" name="payment-method">
+										<label for="payment-bni" class="options__label"><span class="options__text">BNI Cicilan 0%</span>
+											<picture><source srcset="img/payment/bni.webp" type="image/webp"><img class="options__bni" src="img/payment/bni.png" alt="bni"></picture></label>
+									</div>
+									<div class="options__item options__item--mandiri">
+										<input id="payment-mandiri" class="options__input" data-required autocomplete="off" type="radio" value="2" name="payment-method">
+										<label for="payment-mandiri" class="options__label"><span class="options__text">Mandiri Cicilan 0%</span>
+											<picture><source srcset="img/payment/mandiri.webp" type="image/webp"><img class="options__mandiri" src="img/payment/mandiri.png" alt="mandiri"></picture></label>
+									</div>
+									<div class="options__item options__item--permata">
+										<input id="payment-permata" class="options__input" data-required autocomplete="off" required autocomplete="off" type="radio" value="3" name="payment-method">
+										<label for="payment-permata" class="options__label"><span class="options__text">Bank Transfer</span>
+											<picture><source srcset="img/payment/permata-bank.webp" type="image/webp"><img class="options__permata-bank" src="img/payment/permata-bank.png" alt="permata-bank"></picture></label>
+									</div>
+									<div data-da=".options__items, 1100" class="options__item options__item--visa-master">
+										<input id="payment-visa_master-card" class="options__input" data-required autocomplete="off" type="radio" value="4" name="payment-method">
+										<label for="payment-visa_master-card" class="options__label options__label--card"><span class="options__text">Credit Card</span>
+											<span class="options__images">
+												<picture><source srcset="img/payment/master-card.webp" type="image/webp"><img class="options__master-card" src="img/payment/master-card.png" alt="master-card"></picture>
+												<picture><source srcset="img/payment/visa.webp" type="image/webp"><img class="options__visa" src="img/payment/visa.png" alt="visa"></picture></label>
+										</span>
+									</div>
+									<div data-da=".options__items, 1100,0" class="options__item options__item--uob-standard-chartered">
+										<input id="danamon_uob_standard-chartered" class="options__input" data-required autocomplete="off" type="radio" value="5" name="payment-method">
+										<label for="danamon_uob_standard-chartered" class="options__label"><span class="options__text">Credit Card Cicilan 0% (Danamon, UOB & Standard Chartered)</span>
+											<div class="options__images options__images--uob-standard-chartered">
+												<picture><source srcset="img/payment/danamon.webp" type="image/webp"><img class="options__danamon" src="img/payment/danamon.png" alt="danamon"></picture>
+												<picture><source srcset="img/payment/uob.webp" type="image/webp"><img class="options__uob" src="img/payment/uob.png" alt="uob"></picture>
+												<picture><source srcset="img/payment/standard-chartered.webp" type="image/webp"><img class="options__standard-chartered" src="img/payment/standard-chartered.png" alt="standard-chartered"></picture>
+											</div>
+
+										</label>
+									</div>
+									<div class="options__item options__item--go-pay">
+										<input id="payment_go-pay" class="options__input" data-required autocomplete="off" type="radio" value="6" name="payment-method">
+										<label for="payment_go-pay" class="options__label"><span class="options__text">GO-PAY</span>
+											<picture><source srcset="img/payment/go-pay.webp" type="image/webp"><img class="options__go-pay" src="img/payment/go-pay.png" alt="go-pay"></picture>
+										</label>
+									</div>
+									<div class="options__item options__item--kredivo">
+										<input id="payment-kredivo" class="options__input" data-required autocomplete="off" type="radio" value="7" name="payment-method">
+										<label for="payment-kredivo" class="options__label"><span class="options__text">Kredivo</span>
+											<picture><source srcset="img/payment/kredivo.webp" type="image/webp"><img class="options__kredivo" src="img/payment/kredivo.png" alt="kredivo"></picture>
+										</label>
+									</div>
 								</div>
-								<div class="choice-block__model model">
-									<input id="o-2" type="radio" name="model" value="2" class="model__input">
-									<label class="model__label" for="o-2">
-										<picture><source srcset="img/product/product-body/product-model/model-choice_02.webp" type="image/webp"><img src="img/product/product-body/product-model/model-choice_02.png" alt="model 02"></picture>
-									</label>
-								</div>
+
+
 							</div>
-						</div>
-						<div class="body-product__actions">
-							<div data-quantity class="body-product__quantity quantity">
-								<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
-								<div class="quantity__input">
-									<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
-								</div>
-								<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+							<div class="payment-method__action">
+								<button data-ripple type="submit" class="payment-method__button button">Proceed Payment</button>
 							</div>
-							<div class="body-product__action">
-								<button data-ripple type="button" class="body-product__button button button--basket"><span class="_icon-basket">Add to cart</span></button>
-								<button type="button" class="body-product__border-button border-button border-button--cicil">
-									<img class="cicil-orange" src="img/icons/cicil.svg" alt="logo">
-									<img class="cicil-white" src="img/icons/cicil-white.svg" alt="logo">
-								</button>
-							</div>
-						</div>
-					</form>
+
+						</form>
+
+					</div>
+
+
 				</div>
 			</section>
 
-			<section class="product__characteristic characteristic">
-				<div class="characteristic__container">
-					<div data-tabs class="characteristic__tabs">
-						<nav data-tabs-titles class="characteristic__navigation">
-							<button type="button" class="characteristic__tab _tab-active">Detail</button>
-							<button type="button" class="characteristic__tab">Warranty</button>
-							<button type="button" class="characteristic__tab">Custom Engrave</button>
-							<button type="button" class="characteristic__tab">How to Adjust</button>
-							<button type="button" class="characteristic__tab">How to Care</button>
-							<button type="button" class="characteristic__tab">Gallery</button>
-						</nav>
-						<div data-tabs-body class="characteristic__content">
-							<div class="characteristic__body">
-								<div class="characteristic__info">
-									<h4 class="characteristic__title">Material</h4>
-									<p class="characteristic__text">MATOA Way Kambas - Sumatran Rhino comes with a material form of Makassar Ebony (Diospyros celebica). This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin. Sumatran Rhino has unique skin fold, the skin is fairly thin about 10-16mm, and is soft and pliable.</p>
-									<h4 class="characteristic__title">Case</h4>
-									<p class="characteristic__text">The case on this timepiece is made with Height 12.5mm, Width 36mm, Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat glass to increase the enhanced durability on timepieces as scratch resistant and anti fingerprint. This timepiece is also equipped with Hand Polish Brass Spacer for a longer usage periods.</p>
-									<h4 class="characteristic__title">Movement</h4>
-									<p class="characteristic__text">For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
-									<h4 class="characteristic__title">Dial</h4>
-									<p class="characteristic__text">In the dial, there are double layer of Makassar Ebony Veneer with 3, 9 & 12 o'clock laser cut brass plate index.</p>
-									<h4 class="characteristic__title">Hand</h4>
-									<p class="characteristic__text">The hour, minute & small second hands on MATOA Way Kambas - Sumatran Rhino is outfitted with skeleton hand and brush finished with Gold Matte color. This new design aims at adding a value for this special edition.</p>
-									<h4 class="characteristic__title">Important to Note</h4>
-									<p class="characteristic__text">TWood color on watches is produced from a combination of mature and fresh wood but should not be viewed as a defect. It is a very natural process of wood aging.</p>
-								</div>
-								<div class="characteristic__image">
-									<picture><source srcset="img/product/characteristic/dimensions.webp" type="image/webp"><img src="img/product/characteristic/dimensions.jpg" alt="dimensions"></picture>
-								</div>
-							</div>
-							<div class="characteristic__body">
-								Вміст 2 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 3 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 4 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 5 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 6 таба
-							</div>
-						</div>
-					</div>
 
-				</div>
-
-			</section>
-
-			<section class="product__relate relate">
-				<div class="relate__container">
-					<h2 class="relate__title title">Relate Products</h2>
-					<div class="relate__content">
-						<article class="relate__items">
-							<div class="relate__labels">
-								<div class="relate__label relate__label--sale">20% OFF</div>
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/singo-maple.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/singo-maple.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Singo Maple</a>
-							</h4>
-							<div class="relate__price-old">Rp 1.500.000</div>
-							<div class="relate__price">Rp 1.264.000</div>
-						</article>
-						<article class="relate__items">
-							<div class="relate__labels">
-								<div class="relate__label relate__label--new">new</div>
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/sikka.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/sikka.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Sikka (Ebony & Maple)</a>
-							</h4>
-							<div class="relate__price">Rp 1.264.000</div>
-						</article>
-						<article class="relate__items">
-							<div class="relate__labels">
-								<!-- <div class="relate__label relate__label--sale"></div> -->
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/sunda.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/sunda.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Sunda</a>
-							</h4>
-							<div class="relate__price">Rp 1.170.000</div>
-						</article>
-						<article class="relate__items">
-							<div class="relate__labels">
-								<div class="relate__label relate__label--sale">25% OFF</div>
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/singo-maple.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/singo-maple.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Singo Maple</a>
-							</h4>
-							<div class="relate__price-old">Rp 1.280.000</div>
-							<div class="relate__price">Rp 960.000</div>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<div data-watch data-watch-threshold="0.3" class="product__pay pay">
+			<div data-watch data-watch-threshold="0.3" class="payment__pay pay">
 				<div class="pay__container">
 					<div class="pay__body">
 						<a href="#" class="pay__items">
@@ -510,7 +468,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="js/app.min.js?_v=20230104224222"></script>
 </body>
 

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Product Page</title>
+	<title>Checkout</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -35,224 +35,127 @@
 				</div>
 			</div>
 		</header>
-		<main class="product">
-			<nav class="product__breadcrumbs breadcrumbs">
-				<div class="breadcrumbs__container">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item">
-							<a href="#" class="breadcrumbs__link">Home</a>
+		<main class="checkout">
+
+			<nav class="checkout__breadcrumbs breadcrumbs-checkout">
+				<div class="breadcrumbs-checkout__container">
+					<ul class="breadcrumbs-checkout__list">
+						<li class="breadcrumbs-checkout__item">
+							<a href="checkout.html" class="breadcrumbs-checkout__link _icon-checkout">1. Checkout</a>
 						</li>
-						<li class="breadcrumbs__item">
-							<a href="#" class="breadcrumbs__link">Product</a>
+						<li class="breadcrumbs-checkout__item">
+							<a href="#" class="breadcrumbs-checkout__link _icon-payment">2. Payment</a>
 						</li>
-						<li class="breadcrumbs__item">
-							<a href="#" class="breadcrumbs__link"> Watches</a>
-						</li>
-						<li class="breadcrumbs__item">
-							<span class="breadcrumbs__name-product"> Way Kambas Mini Ebony</span>
+						<li class="breadcrumbs-checkout__item">
+							<span class="breadcrumbs-checkout__link _icon-confirmation">3. Confirmation</span>
 						</li>
 					</ul>
 				</div>
 			</nav>
 
-			<section class="product__body body-product">
-				<div class="body-product__container">
-					<div class="body-product__image">
-						<div class="body-product__image-preview image-preview">
-							<div class="image-preview__slider swiper">
-								<div class="image-preview__wrapper swiper-wrapper">
-									<div class="image-preview__slide swiper-slide">
-										<img src="img/product/product-body/product-body_watch.svg" alt="wristwatch">
-									</div>
-									<div class="image-preview__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-front.webp" type="image/webp"><img src="img/product/product-body/wristwatch-front.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-preview__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-back.webp" type="image/webp"><img src="img/product/product-body/wristwatch-back.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-preview__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-box.webp" type="image/webp"><img src="img/product/product-body/wristwatch-box.png" alt="wristwatch"></picture>
-									</div>
-								</div>
+			<section class="checkout__order order">
+				<div class="order__container">
+					<div class="order__body">
+						<article class="order__info info-order">
+							<h2 class="info-order__title title">Detail Order</h2>
+							<div class="info-order__items info-order__items--subtotal">
+								<h3 class="info-order__subtitle">Subtotal</h3>
+								<div class="info-order__price">Rp 2.152.000</div>
 							</div>
-						</div>
-						<div class="body-product__image-product image-product">
-							<div class="image-product__slider swiper">
-								<div class="image-product__wrapper swiper-wrapper">
-									<div class="image-product__slide swiper-slide">
-										<img src="img/product/product-body/product-body_watch.svg" alt="wristwatch">
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-front.webp" type="image/webp"><img src="img/product/product-body/wristwatch-front.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-back.webp" type="image/webp"><img src="img/product/product-body/wristwatch-back.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<picture><source srcset="img/product/product-body/wristwatch-box.webp" type="image/webp"><img src="img/product/product-body/wristwatch-box.png" alt="wristwatch"></picture>
-									</div>
-									<div class="image-product__slide swiper-slide">
-										<img src="img/product/product-body/product-body_watch.svg" alt="wristwatch">
-									</div>
+							<div class="info-order__items info-order__items--cost">
+								<h3 class="info-order__subtitle">Shipping Cost</h3>
+								<div class="info-order__price">Rp 500.000</div>
+							</div>
+							<div class="info-order__items">
+								<h3 class="info-order__subtitle">Promo Code</h3>
+								<div class="info-order__price info-order__price--promo">INDONESIA</div>
+							</div>
+							<div class="info-order__items info-order__items--packagimg-order">
+								<h3 class="info-order__subtitle">Packaging</h3>
+								<div class="info-order__price">Rp 50.000</div>
+							</div>
+							<div class="info-order__items info-order__items--total">
+								<h3 class="info-order__subtitle">Grand Total</h3>
+								<div class="info-order__price">Rp 2.702.000</div>
+							</div>
+						</article>
 
+						<article class="order__address address">
+							<form class="address__form form-address" action="#" enctype="multipart/form-data" method="POST">
+								<div class="form-address__body">
+									<h2 class="form-address__title title">Billing Address</h2>
+									<div class="form-address__line">
+										<label for="name" class="form-address__label">Fullname</label>
+										<input id="full-name" data-required autocomplete="off" data-error="Помилка" type="text" name="full-name" placeholder="Ex: Rasyidin Arsyad Nasution" class="form-address__input">
+									</div>
+									<div class="form-address__line">
+										<label for="email-address" class="form-address__label">Email Address</label>
+										<input id="email-address" data-required autocomplete="off" data-error="Помилка" type="email" name="email-address" placeholder="Ex: rasyid.arsyad@gmail.com" class="form-address__input">
+									</div>
+									<div class="form-address__line">
+										<label for="phone-number" class="form-address__label">Phone Number</label>
+										<input id="phone-number" data-required autocomplete="off" data-error="Помилка" type="tel" name="phone-number" placeholder="Ex: 089111888999" class="form-address__input">
+									</div>
+									<div class="form-address__line">
+										<label for="shipping-address" class="form-address__label">Shipping Address</label>
+										<input id="shipping-address" data-required autocomplete="off" data-error="Помилка" type="text" name="shipping-address" placeholder="Ex: Patriot Street Number 666, Ngaklik, Sleman" class="form-address__input">
+									</div>
+									<div class="form-address__country country country--choice">
+										<div class="form-address__label">Country</div>
+										<select class="form-address__select" name="form[]" data-class-modif="form">
+											<option value="1" selected>United State of America (USA)</option>
+											<option value="2">United State of America (USA)</option>
+											<option value="3">United State of America (USA)</option>
+											<option value="4">United State of America (USA)</option>
+										</select>
+									</div>
+									<div class="form-address__state state state--choice">
+										<div class="form-address__label">State/Province</div>
+										<select class="form-address__select" name="form[]" data-class-modif="form">
+											<option value="1" selected>California</option>
+											<option value="2">California</option>
+											<option value="3">California</option>
+											<option value="4">California</option>
+										</select>
+									</div>
+									<div class="form-address__address-block">
+										<div class="form-address__city city city--choice">
+											<div class="form-address__label">City</div>
+											<select class="form-address__select" name="form[]" data-class-modif="form">
+												<option value="1" selected>San Francisco</option>
+												<option value="2">San Francisco</option>
+												<option value="3">San Francisco</option>
+												<option value="4">San Francisco</option>
+											</select>
+										</div>
+										<div class="form-address__zip-code zip-code">
+											<label for="zip-code" class="form-address__label">Zip Code</label>
+											<input id="zip-code" data-required autocomplete="off" data-error="Помилка" type="text" name="zip-code" placeholder="Ex: 94024" class="form-address__input">
+										</div>
+									</div>
+									<div class="form-address__courier courier courier--choice">
+										<div class="form-address__label">Courier</div>
+										<select class="form-address__select" name="form[]" data-class-modif="form">
+											<option value="1" selected>DHL</option>
+											<option value="2">DHL</option>
+											<option value="3">DHL</option>
+											<option value="4">DHL</option>
+										</select>
+									</div>
 								</div>
-							</div>
-						</div>
+								<div class="form-address__action">
+									<a href="home.html" type="button" class="form-address__border-button border-button border-button--shopping">Continue Shopping</a>
+									<button data-ripple type="submit" class="form-address__button button button--order">Place My Order</button>
+								</div>
+							</form>
+						</article>
 					</div>
 
-					<form action="#" class="body-product__content">
-						<h1 data-da=".body-product__container, 768,0" class="body-product__title title">WAY KAMBAS MINI EBONY</h1>
-						<div class="body-product__price-old">Rp 1.280.000</div>
-						<div class="body-product__price">Rp 1.024.000</div>
-						<div class="body-product__choice-block choice-block">
-							<h6 class="choice-block__title">Choose Model</h6>
-							<div class="choice-block__actions">
-								<div class="choice-block__model model">
-									<input id="o-1" checked type="radio" name="model" value="1" class="model__input">
-									<label class="model__label" for="o-1">
-										<picture><source srcset="img/product/product-body/product-model/model-choice_01.webp" type="image/webp"><img src="img/product/product-body/product-model/model-choice_01.png" alt="model 01"></picture>
-									</label>
-								</div>
-								<div class="choice-block__model model">
-									<input id="o-2" type="radio" name="model" value="2" class="model__input">
-									<label class="model__label" for="o-2">
-										<picture><source srcset="img/product/product-body/product-model/model-choice_02.webp" type="image/webp"><img src="img/product/product-body/product-model/model-choice_02.png" alt="model 02"></picture>
-									</label>
-								</div>
-							</div>
-						</div>
-						<div class="body-product__actions">
-							<div data-quantity class="body-product__quantity quantity">
-								<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
-								<div class="quantity__input">
-									<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
-								</div>
-								<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
-							</div>
-							<div class="body-product__action">
-								<button data-ripple type="button" class="body-product__button button button--basket"><span class="_icon-basket">Add to cart</span></button>
-								<button type="button" class="body-product__border-button border-button border-button--cicil">
-									<img class="cicil-orange" src="img/icons/cicil.svg" alt="logo">
-									<img class="cicil-white" src="img/icons/cicil-white.svg" alt="logo">
-								</button>
-							</div>
-						</div>
-					</form>
 				</div>
 			</section>
 
-			<section class="product__characteristic characteristic">
-				<div class="characteristic__container">
-					<div data-tabs class="characteristic__tabs">
-						<nav data-tabs-titles class="characteristic__navigation">
-							<button type="button" class="characteristic__tab _tab-active">Detail</button>
-							<button type="button" class="characteristic__tab">Warranty</button>
-							<button type="button" class="characteristic__tab">Custom Engrave</button>
-							<button type="button" class="characteristic__tab">How to Adjust</button>
-							<button type="button" class="characteristic__tab">How to Care</button>
-							<button type="button" class="characteristic__tab">Gallery</button>
-						</nav>
-						<div data-tabs-body class="characteristic__content">
-							<div class="characteristic__body">
-								<div class="characteristic__info">
-									<h4 class="characteristic__title">Material</h4>
-									<p class="characteristic__text">MATOA Way Kambas - Sumatran Rhino comes with a material form of Makassar Ebony (Diospyros celebica). This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin. Sumatran Rhino has unique skin fold, the skin is fairly thin about 10-16mm, and is soft and pliable.</p>
-									<h4 class="characteristic__title">Case</h4>
-									<p class="characteristic__text">The case on this timepiece is made with Height 12.5mm, Width 36mm, Length 33mm and Dial Opening 25mm. The glass is equipped with K1 flat glass to increase the enhanced durability on timepieces as scratch resistant and anti fingerprint. This timepiece is also equipped with Hand Polish Brass Spacer for a longer usage periods.</p>
-									<h4 class="characteristic__title">Movement</h4>
-									<p class="characteristic__text">For the first time, MATOA comes with Seiko Quartz VD78 movement with small second function. A small second hand is above 6 o'clock position. This second hand dial is dedicated to Sumatran Rhino whom every second of its life is so precious because whenever Sumatran Rhino goes, it can be threatened by illegal poaching</p>
-									<h4 class="characteristic__title">Dial</h4>
-									<p class="characteristic__text">In the dial, there are double layer of Makassar Ebony Veneer with 3, 9 & 12 o'clock laser cut brass plate index.</p>
-									<h4 class="characteristic__title">Hand</h4>
-									<p class="characteristic__text">The hour, minute & small second hands on MATOA Way Kambas - Sumatran Rhino is outfitted with skeleton hand and brush finished with Gold Matte color. This new design aims at adding a value for this special edition.</p>
-									<h4 class="characteristic__title">Important to Note</h4>
-									<p class="characteristic__text">TWood color on watches is produced from a combination of mature and fresh wood but should not be viewed as a defect. It is a very natural process of wood aging.</p>
-								</div>
-								<div class="characteristic__image">
-									<picture><source srcset="img/product/characteristic/dimensions.webp" type="image/webp"><img src="img/product/characteristic/dimensions.jpg" alt="dimensions"></picture>
-								</div>
-							</div>
-							<div class="characteristic__body">
-								Вміст 2 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 3 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 4 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 5 таба
-							</div>
-							<div class="characteristic__body">
-								Вміст 6 таба
-							</div>
-						</div>
-					</div>
 
-				</div>
-
-			</section>
-
-			<section class="product__relate relate">
-				<div class="relate__container">
-					<h2 class="relate__title title">Relate Products</h2>
-					<div class="relate__content">
-						<article class="relate__items">
-							<div class="relate__labels">
-								<div class="relate__label relate__label--sale">20% OFF</div>
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/singo-maple.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/singo-maple.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Singo Maple</a>
-							</h4>
-							<div class="relate__price-old">Rp 1.500.000</div>
-							<div class="relate__price">Rp 1.264.000</div>
-						</article>
-						<article class="relate__items">
-							<div class="relate__labels">
-								<div class="relate__label relate__label--new">new</div>
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/sikka.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/sikka.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Sikka (Ebony & Maple)</a>
-							</h4>
-							<div class="relate__price">Rp 1.264.000</div>
-						</article>
-						<article class="relate__items">
-							<div class="relate__labels">
-								<!-- <div class="relate__label relate__label--sale"></div> -->
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/sunda.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/sunda.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Sunda</a>
-							</h4>
-							<div class="relate__price">Rp 1.170.000</div>
-						</article>
-						<article class="relate__items">
-							<div class="relate__labels">
-								<div class="relate__label relate__label--sale">25% OFF</div>
-							</div>
-							<a href="#" class="relate__image-ibg">
-								<picture><source data-srcset="img/product/relate-products/singo-maple.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/product/relate-products/singo-maple.jpg" alt="image"></picture>
-							</a>
-							<h4 class="relate__value">
-								<a href="#" class="relate__link-title">Singo Maple</a>
-							</h4>
-							<div class="relate__price-old">Rp 1.280.000</div>
-							<div class="relate__price">Rp 960.000</div>
-						</article>
-					</div>
-				</div>
-			</section>
-
-			<div data-watch data-watch-threshold="0.3" class="product__pay pay">
+			<div data-watch data-watch-threshold="0.3" class="checkout__pay pay">
 				<div class="pay__container">
 					<div class="pay__body">
 						<a href="#" class="pay__items">
@@ -510,7 +413,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="js/app.min.js?_v=20230104224222"></script>
 </body>
 
