@@ -538,12 +538,6 @@ textarea.input {
 
 .select__value:after {
   content: "\e908";
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 1.5rem;
-          flex: 0 0 1.5rem;
   width: 1.5rem;
   height: 1.5rem;
   display: -webkit-box;
@@ -575,9 +569,6 @@ textarea.input {
 .form-address .select__value {
   padding: 0 0 0 0;
   height: 2rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .form-address .select__value::after {
@@ -594,16 +585,20 @@ textarea.input {
 .select__options {
   position: absolute;
   top: 1.875rem;
+  /* 30/32 */
   min-width: 100%;
   left: 0;
   background-color: #fff;
   border: 0.0187rem solid #333333;
   border-top: 0;
-  padding: 0.625rem 0rem 0.3125rem 0rem;
+  padding: 0.3125rem 0rem 0.3125rem 0rem;
 }
 
 .form-address .select__options {
   border: 0;
+  right: -1.9375rem;
+  left: -1.9375rem;
+  padding-left: 2rem;
 }
 
 .select__scroll {
@@ -3485,6 +3480,10 @@ body::after {
       align-self: end;
 }
 
+.form-address__label:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
 .form-address__input {
   font-size: 1.25rem;
   line-height: 1.2;
@@ -5944,8 +5943,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
   }
 
   .more:not(:last-child) {
