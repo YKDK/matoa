@@ -3726,6 +3726,7 @@ body::after {
 }
 
 .delivery-detail {
+  position: relative;
   padding: 1.5rem 2rem;
   background: #fff;
   display: -ms-grid;
@@ -3793,6 +3794,23 @@ body::after {
   /* 24/16 */
   letter-spacing: 0.02em;
   color: #D84727;
+}
+
+.delivery-detail__copy {
+  position: absolute;
+  top: 3.75rem;
+  right: 2rem;
+  color: #75c81c;
+  display: none;
+  -webkit-transition: all 0.3s ease 0.3s;
+  -o-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
+}
+
+.delivery-detail__button {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .delivery-detail__text {

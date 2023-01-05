@@ -7114,6 +7114,27 @@ PERFORMANCE OF THIS SOFTWARE.
                 addToBasket();
                 e.preventDefault();
             }
+            if (targetElement.closest(".delivery-detail__button")) {
+                const copyOrder = document.querySelector(".delivery-detail__copy");
+                const copyButton = document.querySelector(".delivery-detail__button");
+                copyOrder.style.cssText = `\n    position: absolute;\n    top: 60px;\n    right: 32px;\n    color: #75c81c;\n    display: block;\n    `;
+                copyButton.style.cssText = `\n    visibility: hidden;\n    opacity: 0;\n\n    `;
+                copyToClipboard();
+                e.preventDefault();
+            }
+        }
+        function copyToClipboard() {
+            const str = document.querySelector(".delivery-detail__order").innerText;
+            console.log(str);
+            const el = document.createElement("textarea");
+            el.value = str;
+            el.setAttribute("readonly", "");
+            el.style.position = "absolute";
+            el.style.left = "-9999px";
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand("copy");
+            document.body.removeChild(el);
         }
         function addToBasket() {
             const speed = 1e3;
