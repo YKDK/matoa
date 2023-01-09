@@ -3747,8 +3747,8 @@ body::after {
 
 .delivery-detail__subtitle {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 30.925926%;
-          flex: 0 1 30.925926%;
+      -ms-flex: 0 1 34%;
+          flex: 0 1 34%;
   /* 167/540 */
 }
 
@@ -4155,11 +4155,8 @@ body::after {
 }
 
 .info-confirmed__items--shipping {
-  font-family: "Taviraj";
-  font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
-  line-height: 1.6;
   letter-spacing: 0.02em;
 }
 
@@ -4189,6 +4186,11 @@ body::after {
           align-items: center;
   gap: 0.5rem;
   padding: 0.1875rem 0;
+}
+
+.info-product__amount {
+  font-size: 1rem;
+  color: #777777;
 }
 
 .swiper {
