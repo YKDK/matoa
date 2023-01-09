@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
+	<title>Confirmation</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -35,266 +35,79 @@
 				</div>
 			</div>
 		</header>
-		<main class="page">
-			<section class="page__main-slider main-slider">
-				<div class="main-slider__container">
-					<!-- Оболонка слайдера -->
-					<div class="main-slider__slider swiper">
-						<!-- Частина слайдера, що рухається -->
-						<div class="main-slider__wrapper swiper-wrapper">
-							<!-- Слайд -->
-							<div class="main-slider__slide slide-main-slider swiper-slide">
-								<div data-da=".slide-main-slider__body--1, 767.98,1" class="slide-main-slider__image-ibg_contain">
-									<picture><source srcset="img/main/main-slider/clock.webp" type="image/webp"><img src="img/main/main-slider/clock.png" alt="clock"></picture>
+		<main class="confirmation">
+
+			<nav class="confirmation__breadcrumbs breadcrumbs-confirmation">
+				<div class="breadcrumbs-confirmation__container">
+					<ul class="breadcrumbs-confirmation__list">
+						<li class="breadcrumbs-confirmation__item">
+							<a href="checkout.html" class="breadcrumbs-confirmation__link breadcrumbs-confirmation__link--checkout-border">1. Checkout</a>
+						</li>
+						<li class="breadcrumbs-confirmation__item">
+							<a href="payment.html" class="breadcrumbs-confirmation__link breadcrumbs-confirmation__link--payment-gray">2. Payment</a>
+						</li>
+						<li class="breadcrumbs-confirmation__item">
+							<span class="breadcrumbs-confirmation__link breadcrumbs-confirmation__link--confirmation-orange">3. Confirmation</span>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<section class="confirmation__confirmed confirmed">
+				<div class="confirmed__container">
+					<div class="confirmed__columns">
+						<div class="confirmed__order order-confirmed">
+							<div class="order-confirmed__image">
+								<img src="img/confirmation/image-info.svg" alt="image-info">
+							</div>
+							<h2 class="order-confirmed__title">Order Confirmed</h2>
+							<p class="order-confirmed__subtitle">Your order have been confirmed, please wait and track your order</p>
+							<button data-ripple class="order-confirmed__button button" type="button">Go to track page</button>
+						</div>
+						<div class="confirmed__info info-confirmed">
+							<div class="info-confirmed__delivery delivery">
+								<span class="delivery__time _icon-clock">10 days delivery</span>
+								<span class="delivery__service _icon-car">DHL Express</span>
+							</div>
+							<div class="info-confirmed__product">
+								<div class="info-confirmed__info-product info-product">
+									<div class="info-product__name">Way Kambas Mini Ebony</div>
+									<div class="info-product__amount">2 x IDR 1.024.000</div>
 								</div>
-								<div class="slide-main-slider__body slide-main-slider__body--1">
-									<h2 class="slide-main-slider__title">WAY KAMBAS MINI EBONY</h2>
-									<p class="slide-main-slider__text">
-										MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin.
-									</p>
-									<a href="#" class="slide-main-slider__more more">
-										Discover
-									</a>
-									<div class="slide-main-slider__action">
-										<button data-ripple type="submit" class="slide-main-slider__button button button--basket"><span class="_icon-basket">Add to cart</span></button>
-										<button type="submit" class="slide-main-slider__border-button border-button border-button--cicil">
-											<img class="cicil-orange" src="img/icons/cicil.svg" alt="logo">
-											<img class="cicil-white" src="img/icons/cicil-white.svg" alt="logo">
-										</button>
-									</div>
+								<div class="info-confirmed__info-product info-product">
+									<div class="info-product__name">Sikka (Ebony & Mapple)</div>
+									<div class="info-product__amount">1 x IDR 1.264.000</div>
 								</div>
 							</div>
-						</div>
-						<div class="main-slider__action-mobile">
-							<button data-ripple type="button" class="main-slider__button button button--basket"><span class="_icon-basket">Add to cart</span></button>
-							<button type="button" class="main-slider__border-button border-button border-button--cicil">
-								<img class="cicil-orange" src="img/icons/cicil.svg" alt="logo">
-								<img class="cicil-white" src="img/icons/cicil-white.svg" alt="logo">
-							</button>
-						</div>
-
-						<!-- Якщо потрібна навігація (ліворуч/праворуч) -->
-						<div class="main-slider__arrows">
-							<button type="button" class="main-slider__arrow swiper-button-prev _icon-right"></button>
-							<button type="button" class="main-slider__arrow swiper-button-next _icon-right"></button>
+							<div class="info-confirmed__items info-confirmed__items--subtotal">
+								<h3 class="info-confirmed__subtitle">Subtotal</h3>
+								<div class="info-confirmed__price">Rp 2.152.000</div>
+							</div>
+							<div class="info-confirmed__items info-confirmed__items--cost">
+								<h3 class="info-confirmed__subtitle">Shipping Cost</h3>
+								<div class="info-confirmed__price">Rp 500.000</div>
+							</div>
+							<div class="info-confirmed__items info-confirmed__items--packagimg-order">
+								<h3 class="info-confirmed__subtitle">Packaging</h3>
+								<div class="info-confirmed__price">Rp 50.000</div>
+							</div>
+							<div class="info-confirmed__items info-confirmed__items--total">
+								<h3 class="info-confirmed__subtitle">Grand Total</h3>
+								<div class="info-confirmed__price">Rp 2.702.000</div>
+							</div>
+							<div class="info-confirmed__items info-confirmed__items--shipping">
+								<h3 class="info-confirmed__subtitle">Shipping Address</h3>
+								<div class="info-confirmed__address">
+									<p>18 Richardson Drive</p>
+									<p>Fountain Valley, CA 92708</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<div data-watch data-watch-threshold="0.3" class="page__discover-now discover-now">
-				<div class="discover-now__container">
-					<article class="discover-now__item item-discover-now">
-						<h3 class="item-discover-now__title">Luxurious <span>Eyewear</span></h3>
-						<div class="item-discover-now__body">
-							<p class="item-discover-now__text">See the beauty of exotic world with the luxurious glasses</p>
-							<a href="#" class="item-discover-now__link more">Discover Now</a>
-							<div class="item-discover-now__image">
-								<picture><source srcset="img/main/discover-now/glasses-discover.webp" type="image/webp"><img src="img/main/discover-now/glasses-discover.png" alt="glasses"></picture>
-							</div>
-						</div>
-					</article>
-					<article class="discover-now__item item-discover-now">
-						<h3 class="item-discover-now__title">Comfortable <span>Watches</span></h3>
-						<div class="item-discover-now__body">
-							<p class="item-discover-now__text">Feels the balancing function and beauty in our wooden watches</p>
-							<a href="#" class="item-discover-now__link more">Discover Now</a>
-							<div class="item-discover-now__image">
-								<picture><source srcset="img/main/discover-now/clock-discover.webp" type="image/webp"><img src="img/main/discover-now/clock-discover.png" alt="Watches"></picture>
-							</div>
-						</div>
-					</article>
-				</div>
-			</div>
-
-			<section data-watch data-watch-threshold="0.04" class="page__monthly monthly-deals">
-				<div class="monthly-deals__container">
-					<h2 class="monthly-deals__title title">Monthly Deals</h2>
-					<div class="monthly-deals__items">
-						<article class="monthly-deals__item item-monthly-deal">
-							<a href="#" class="item-monthly-deal__image-ibg">
-								<picture><source srcset="img/main/monthly-deals/singo-maple.webp" type="image/webp"><img src="img/main/monthly-deals/singo-maple.jpg" alt="Singo Maple"></picture>
-							</a>
-							<div class="item-monthly-deal__body">
-								<h4 class="item-monthly-deal__title">
-									<a href="#" class="monthly-deals__link-title">Singo Maple</a>
-								</h4>
-								<div class="item-monthly-deal__sale">20% Off</div>
-								<div class="item-monthly-deal__price-old">Rp 1.500.000</div>
-								<div class="item-monthly-deal__price">Rp 1.264.000</div>
-								<div class="item-monthly-deal__hiden">
-									<div class="item-monthly-deal__actions">
-										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
-										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="monthly-deals__item item-monthly-deal">
-							<a href="#" class="item-monthly-deal__image-ibg">
-								<picture><source srcset="img/main/monthly-deals/singo-ebony.webp" type="image/webp"><img src="img/main/monthly-deals/singo-ebony.jpg" alt="Singo Ebony"></picture>
-							</a>
-							<div class="item-monthly-deal__body">
-								<h4 class="item-monthly-deal__title">
-									<a href="#" class="monthly-deals__link-title">Singo Ebony</a>
-								</h4>
-								<div class="item-monthly-deal__sale">20% Off</div>
-								<div class="item-monthly-deal__price-old">Rp 1.500.000</div>
-								<div class="item-monthly-deal__price">Rp 1.264.000</div>
-								<div class="item-monthly-deal__hiden">
-									<div class="item-monthly-deal__actions">
-										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
-										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="monthly-deals__item item-monthly-deal">
-							<a href="#" class="item-monthly-deal__image-ibg">
-								<picture><source srcset="img/main/monthly-deals/rakai-ebony.webp" type="image/webp"><img src="img/main/monthly-deals/rakai-ebony.jpg" alt="Rakai Ebony"></picture>
-							</a>
-							<div class="item-monthly-deal__body">
-								<h4 class="item-monthly-deal__title">
-									<a href="#" class="monthly-deals__link-title">Rakai Ebony</a>
-								</h4>
-								<div class="item-monthly-deal__sale">15% Off</div>
-								<div class="item-monthly-deal__price-old">Rp 1.280.000</div>
-								<div class="item-monthly-deal__price">Rp 1.118.000</div>
-								<div class="item-monthly-deal__hiden">
-									<div class="item-monthly-deal__actions">
-										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
-										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="monthly-deals__item item-monthly-deal">
-							<a href="#" class="item-monthly-deal__image-ibg">
-								<picture><source srcset="img/main/monthly-deals/way-kambas.webp" type="image/webp"><img src="img/main/monthly-deals/way-kambas.jpg" alt="Way Kambas Mini Maple"></picture>
-							</a>
-							<div class="item-monthly-deal__body">
-								<h4 class="item-monthly-deal__title">
-									<a href="#" class="monthly-deals__link-title">Way Kambas Mini Maple</a>
-								</h4>
-								<div class="item-monthly-deal__sale">10% Off</div>
-								<div class="item-monthly-deal__price-old">Rp 1.280.000</div>
-								<div class="item-monthly-deal__price">Rp 1.024.000</div>
-								<div class="item-monthly-deal__hiden">
-									<div class="item-monthly-deal__actions">
-										<button type="submit" class="item-monthly-deal__border-button border-button--favorite _icon-heart"></button>
-										<button data-ripple type="submit" class="item-monthly-deal__button button button--height39"><span>Add to cart</span></button>
-									</div>
-								</div>
-							</div>
-						</article>
-					</div>
-				</div>
-
-			</section>
-
-			<section data-watch data-watch-threshold="0.2" class="page__recent recent-news">
-				<div class="recent-news__container">
-					<h2 class="recent-news__title title">Recent News</h2>
-					<div class="recent-news__body">
-						<div class="recent-news__content">
-							<h3 class="recent-news__label">Where To Travel</h3>
-							<p class="recent-news__text">Matoa Where To Travel? Yogyakarta</p>
-							<a href="#" class="recent-news__border-button border-button border-button--small">Discover</a>
-						</div>
-						<div class="recent-news__image">
-							<picture><source srcset="img/main/recent-news/watch.webp" type="image/webp"><img src="img/main/recent-news/watch.jpg" alt="watch"></picture>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section data-watch data-watch-threshold="0.02" class="page__series series">
-				<div class="series__container">
-					<div class="series__columns">
-						<div class="series__column">
-							<h3 class="series__title title title--small">Maple Series</h3>
-							<div id="cat-01" class="series__article"></div>
-						</div>
-						<div class="series__column">
-							<h3 class="series__title title title--small">Ebony Series</h3>
-							<div id="cat-02" class="series__article"></div>
-						</div>
-						<div class="series__column">
-							<h3 class="series__title title title--small">Featured</h3>
-							<div id="cat-03" class="series__article"></div>
-						</div>
-					</div>
-					<div class="items-series__footer">
-						<div class="items-series__button-action">
-							<button type="button" class="items-series__border-button border-button border-button--big">See More</button>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section data-watch data-watch-threshold="0.2" class="page__testimonials testimonials">
-				<div class="testimonials__container">
-					<h2 class="testimonials__title title">Testimonials</h2>
-					<div class="testimonials__slider swiper">
-						<div class="testimonials__wrapper swiper-wrapper">
-							<div class="testimonials__slide slide-testimonials swiper-slide">
-								<div class="slide-testimonials__body">
-									<div class="slide-testimonials__image">
-										<picture><source srcset="img/main/testimonials/testimonials-image.webp" type="image/webp"><img src="img/main/testimonials/testimonials-image.png" alt="image"></picture>
-									</div>
-									<div class="slide-testimonials__content">
-										<h4 class="slide-testimonials__name">Gita Savitri</h4>
-										<p class="slide-testimonials__profession">Content Creator/Influencer</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="testimonials__arrows">
-							<button type="button" class="testimonials__arrow-left swiper-button-prev _icon-left_grey"></button>
-							<button type="button" class="testimonials__arrow-right swiper-button-next _icon-left_grey"></button>
-						</div>
-
-					</div>
-				</div>
-
-			</section>
-
-			<section data-watch data-watch-threshold="0.1" class="page__insta insta">
-				<div class="insta__container">
-					<h2 class="insta__title title">Instagram</h2>
-					<div data-gallery class="insta__items">
-						<a href="img/main/insta/insta-01-big.jpg" class="insta__item">
-							<div class="insta__image-ibg">
-								<picture><source srcset="img/main/insta/insta-01.webp" type="image/webp"><img src="img/main/insta/insta-01.jpg" alt="image"></picture>
-							</div>
-						</a>
-						<a href="img/main/insta/insta-02-big.jpg" class="insta__item">
-							<div class="insta__image-ibg">
-								<picture><source srcset="img/main/insta/insta-02.webp" type="image/webp"><img src="img/main/insta/insta-02.jpg" alt="image"></picture>
-							</div>
-						</a>
-						<a href="img/main/insta/insta-03-big.jpg" class="insta__item">
-							<div class="insta__image-ibg">
-								<picture><source srcset="img/main/insta/insta-03.webp" type="image/webp"><img src="img/main/insta/insta-03.jpg" alt="image"></picture>
-							</div>
-						</a>
-						<a href="img/main/insta/insta-04-big.jpg" class="insta__item">
-							<div class="insta__image-ibg">
-								<picture><source srcset="img/main/insta/insta-04.webp" type="image/webp"><img src="img/main/insta/insta-04.jpg" alt="image"></picture>
-							</div>
-						</a>
-						<a href="img/main/insta/insta-05-big.jpg" class="insta__item">
-							<div class="insta__image-ibg">
-								<picture><source srcset="img/main/insta/insta-05.webp" type="image/webp"><img src="img/main/insta/insta-05.jpg" alt="image"></picture>
-							</div>
-						</a>
-					</div>
-
-				</div>
-
-			</section>
-
-			<div data-watch data-watch-threshold="0.3" class="page__pay pay">
+			<div data-watch data-watch-threshold="0.3" class="payment__pay pay">
 				<div class="pay__container">
 					<div class="pay__body">
 						<a href="#" class="pay__items">
@@ -552,7 +365,6 @@
 			</div>
 		</div>
 	</div>
-
 	<script src="js/app.min.js?_v=20230109124743"></script>
 </body>
 
